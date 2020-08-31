@@ -1,0 +1,16 @@
+h2.mr-4{
+    margin-bottom: 0px;
+} 
+
+@media only screen and (max-width: 484px) {
+    .profBtn {
+        font-size: 10px;
+        padding: 4px 13px;
+    }
+}
+
+.prof {
+    
+}
+
+

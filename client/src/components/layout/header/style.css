@@ -1,0 +1,57 @@
+.slicknav_btn{
+    display: none;
+}
+
+#slicknav-mobile{
+    width: 100%;
+    position: absolute;
+    top: 50px;
+    left: 0px;
+}
+
+
+
+@media only screen and (max-width: 991px) {
+    .hidex{
+        display: none;
+    }
+    .pilright{
+        position: absolute;
+        right: 10px;
+    }
+    .pilleft{
+        position: absolute;
+        left: 0;
+    }
+    .slicknav_btn{
+        outline: none !important;
+        display: block;
+    }
+    .slicknav_btn.slicknav_open:before{
+        font-family: 'FontAwesome';
+        content: "\f00d";
+        font-size: 17px;
+    }
+    .slicknav_btn.slicknav_collapsed:before{
+        content: "\f0c9";
+        font-family: 'FontAwesome';
+        font-size: 20px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .navbar-mini{
+        position: relative;
+        top: 0;
+    }
+}
+
+.input-group-search-form-wrapper.size-lg .dropdown.dropdown-select:before{
+    display: none;
+}
+
+.autoComplete{
+    margin-bottom: 0;
+    font-size: 13px;
+    font-weight: 500;
+}
