@@ -5,7 +5,6 @@ const authPhotographer = require('../../middleware/authPhotographer');
 const authAdmin = require('../../middleware/authAdmin');
 const bcrypt = require('bcryptjs');
 const jwt = require('jsonwebtoken');
-const config = require('config');
 const myEmail = process.env.EMAIL;
 const myPassword = process.env.PASSWORD;
 const jwtSecret = process.env.JWT_SECRET;
@@ -88,7 +87,7 @@ router.post('/forgot', async (req, res) => {
           <h1>Hie ${user.name},</h1>
           <h2>Password reset</h2>
           <p>Please click the link below to reset your password<p/>
-          <a href="http://localhost:3000/auth-user/${token}">reset password</>
+          <a href="https://sleepy-gorge-55560.herokuapp.com/auth-user/${token}">reset password</>
         `;
 
 			let transporter = nodemailer.createTransport({
@@ -213,7 +212,7 @@ router.post('/photographer/forgot', async (req, res) => {
           <h1>Hie ${user.name},</h1>
           <h2>Password reset</h2>
           <p>Please click the link below to reset your password<p/>
-          <a href="http://localhost:3000/auth-photographer/${token}">reset password</>
+          <a href="https://sleepy-gorge-55560.herokuapp.com/auth-photographer/${token}">reset password</>
         `;
 
 			let transporter = nodemailer.createTransport({
@@ -323,7 +322,7 @@ router.post('/admin/forgot', async (req, res) => {
           <h1>Hie ${user.name},</h1>
           <h2>Password reset</h2>
           <p>Please click the link below to reset your password<p/>
-          <a href="http://localhost:3000/forgot/${token}">reset password</>
+          <a href="https://sleepy-gorge-55560.herokuapp.com/forgot/${token}">reset password</>
         `;
 
 			let transporter = nodemailer.createTransport({

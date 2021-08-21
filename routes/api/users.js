@@ -56,7 +56,7 @@ router.post('/', async (req, res) => {
           <h1>Welcome ${name},</h1>
           <h2>Welcome to Vidcam</h2>
           <p>Please click the link below to complete your registration<p/>
-          <a href="http://localhost:3000/auth-user/${token}">verify email</>
+          <a href="https://sleepy-gorge-55560.herokuapp.com/auth-user/${token}">verify email</>
         `;
 
 			let transporter = nodemailer.createTransport({
@@ -137,7 +137,7 @@ router.post('/photographer', async (req, res) => {
           <h1>Welcome ${name},</h1>
           <h2>Welcome to Vidcam</h2>
           <p>Please click the link below to complete your registration<p/>
-          <a href="http://localhost:3000/auth-photographer/${token}">verify email</>
+          <a href="https://sleepy-gorge-55560.herokuapp.com/auth-photographer/${token}">verify email</>
         `;
 
 			let transporter = nodemailer.createTransport({
@@ -218,7 +218,7 @@ router.post('/admin', async (req, res) => {
           <h1>Welcome ${name},</h1>
           <h2>Welcome to Vidcam</h2>
           <p>Please click the link below to complete your registration<p/>
-          <a href="http://localhost:3000/auth-user/${token}">verify email</>
+          <a href="https://sleepy-gorge-55560.herokuapp.com/auth-user/${token}">verify email</>
         `;
 
 			let transporter = nodemailer.createTransport({
