@@ -11,3 +11,5 @@ $ npm run dev
 
 # Visit http://localhost:5000
 ```
+### Config Vars
+Open "config/default.json" and add the relavant config vars
