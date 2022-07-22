@@ -1,5 +1,5 @@
 # Vidcam
-This is a photo sharing app using React.js, Node.js, Express, Mongoose and some other packages.
+This is a photo sharing app using React.js, Redux, Node.js, Express, Mongoose and some other packages.
 ### Usage
 ```bash
 $ npm install
